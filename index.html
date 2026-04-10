@@ -63,8 +63,8 @@
             More Research
           </a>
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="https://mok0102.github.io/model-discovery">
-              model-discovery
+            <a class="navbar-item" href="https://github.com/kaist-ami/SMILE-Dataset">
+              😀 SMILE: Multimodal Dataset for Understanding Laughter..
             </a>
           </div>
         </div>
@@ -79,9 +79,23 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">SMILE-Next 😆: <br>Teaching Large Language Models to Detect,
+            <h1 class="title is-1 publication-title">😆 SMILE-Next: <br>Teaching Large Language Models to Detect,
               Classify, and Reason about Laughter
             </h1>
+            <div style="margin-bottom: 1.2rem; margin-top: 0.6rem;">
+              <span style="
+                display: inline-block;
+                background: linear-gradient(135deg, #ffe066, #ffb347);
+                color: #4a3200;
+                font-size: 1.0rem;
+                font-weight: 600;
+                padding: 0.4em 1.0em;
+                border-radius: 4px;
+                border: 1.5px solid #f0c040;
+                letter-spacing: 0.02em;
+              ">Accepted at ACL 2026 Main Oral</span>
+            </div>
+
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://mok0102.github.io">Lee Jung-Mok</a><sup>1</sup>,</span>
@@ -125,22 +139,21 @@
                   </a>
                 </span>
                 <!-- Video Link. -->
-                <!-- <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                <span class="link-block">
+                  <a href="https://github.com/kaist-ami" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
+                    </span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
                 <!-- Code Link. -->
                 <span class="link-block">
                   <a href="https://github.com/kaist-ami" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code (Coming Soon)</span>
+                    <span>Code</span>
                   </a>
                 </span>
               </div>
@@ -161,7 +174,8 @@
       </video> -->
         <img src="./static/images/teaser2.png" class="interpolation-image" alt="Interpolate start reference image." />
         <h2 class="subtitle has-text-centered">
-          <br> Qualitative Result of Proposed SMILE-Next.
+          <br> SMILE-Next defines three laughter-related tasks: <br>Laughter Detection, Laughter Classification,
+          Laughter and Reasoning.
         </h2>
       </div>
     </div>
@@ -177,9 +191,6 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
-            <!-- <p>
-            We present the method to 
-          </p> -->
             <p>
               Laughter is a complex social signal that conveys communicative intent beyond amusement. While prior work
               has focused on isolated laughter analysis tasks, a comprehensive understanding of laughter in real-world
@@ -191,60 +202,77 @@
               specialization. Experimental results show that the combination of our proposed components substantially
               outperforms multimodal LLM baselines, advancing robust real-world laughter understanding.
             </p>
-            <!-- <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
-          </p> -->
           </div>
         </div>
       </div>
-      <!--/ Abstract. -->
-
-      <!-- Paper video. -->
-      <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-      <!--/ Paper video. -->
   </section>
-
 
   <section class="section">
     <div class="container is-max-desktop">
       <!-- Animation. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
-          <h2 class="title is-3">Main Results</h2>
+
+          <h2 class="title is-3">SMILE-Next: A Dataset for Real-World Laughter Understanding</h2>
 
           <!-- Interpolating. -->
-          <h3 class="title is-4">Qualitative Results of SMILE-Next</h3>
+          <h3 class="title is-4">Dataset Statistics</h3>
           <div class="content has-text-justified">
-            <p>
+            <!-- <p>
               At <span class="dnerf">Gaussian Process Kernel Discovery</span>, our pipeline can effectively search for
               the kernel composition compared to previous pipelines.
-            </p>
+            </p> -->
+          </div>
+          <!-- <div class="column is-full-width has-text-centered">
+            <img src="./static/images/qualitative_sample_2_3.png" class="interpolation-image"
+              alt="Interpolate start reference image." />
+          </div> -->
+          <br />
+
+          <!-- Interpolating. -->
+          <h3 class="title is-4">Laughter-tailored Self-Instruct</h3>
+          <div class="content has-text-justified">
+            <!-- <p>
+              At <span class="dnerf">Gaussian Process Kernel Discovery</span>, our pipeline can effectively search for
+              the kernel composition compared to previous pipelines.
+            </p> -->
+          </div>
+          <div class="column is-full-width has-text-centered">
+            <img src="./static/images/task_frequency.png" class="interpolation-image"
+              alt="Interpolate start reference image." />
+          </div>
+          <br />
+
+          <h2 class="title is-3">Main Methods</h2>
+
+          <!-- Interpolating. -->
+          <h3 class="title is-4">Mixture-of-Laugh-Experts</h3>
+          <div class="content has-text-justified">
+            <!-- <p>
+              At <span class="dnerf">Gaussian Process Kernel Discovery</span>, our pipeline can effectively search for
+              the kernel composition compared to previous pipelines.
+            </p> -->
+          </div>
+          <div class="column is-full-width has-text-centered">
+            <img src="./static/images/mole.png" class="interpolation-image" alt="Interpolate start reference image." />
+          </div>
+          <br />
+
+          <h2 class="title is-3">Results</h2>
+
+          <!-- Interpolating. -->
+          <h3 class="title is-4">Qualitative Results</h3>
+          <div class="content has-text-justified">
+            <!-- <p>
+              At <span class="dnerf">Gaussian Process Kernel Discovery</span>, our pipeline can effectively search for
+              the kernel composition compared to previous pipelines.
+            </p> -->
           </div>
           <div class="column is-full-width has-text-centered">
             <img src="./static/images/qualitative_sample_2_3.png" class="interpolation-image"
               alt="Interpolate start reference image." />
-            <!-- <img src="./static/images/results/icml-qual-mauna.png"
-                class="interpolation-image"
-                alt="Interpolate start reference image."/> -->
           </div>
           <br />
-          <!--/ Interpolating. -->
 
           <!-- Re-rendering. -->
           <h3 class="title is-4">Router Activation</h3>
@@ -293,7 +321,7 @@
         </div>
       </div>
     </div> -->
-      <!--/ Concurrent Work. -->
+      / Concurrent Work.
 
     </div>
   </section>
