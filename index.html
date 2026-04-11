@@ -213,10 +213,19 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
 
-          <h2 class="title is-3">SMILE-Next: A Dataset for Real-World Laughter Understanding</h2>
+          <h2 class="title is-3">SMILE-Next: Real-World Laughter Dataset</h2>
 
           <!-- Interpolating. -->
           <h3 class="title is-4">Dataset Statistics</h3>
+          <div class="content has-text-justified">
+          </div>
+          <div class="column is-full-width has-text-centered">
+            <img src="./static/images/statistics.png" class="interpolation-image" alt="Dataset statistics." />
+          </div>
+          <br />
+
+          <!-- Interpolating. -->
+          <h2 class="title is-3">Laughter-tailored Self-Instruct</h2>
           <div class="content has-text-justified">
             <!-- <p>
               At <span class="dnerf">Gaussian Process Kernel Discovery</span>, our pipeline can effectively search for
@@ -224,41 +233,93 @@
             </p> -->
           </div>
           <!-- <div class="column is-full-width has-text-centered">
-            <img src="./static/images/qualitative_sample_2_3.png" class="interpolation-image"
-              alt="Interpolate start reference image." />
-          </div> -->
-          <br />
-
-          <!-- Interpolating. -->
-          <h3 class="title is-4">Laughter-tailored Self-Instruct</h3>
-          <div class="content has-text-justified">
-            <!-- <p>
-              At <span class="dnerf">Gaussian Process Kernel Discovery</span>, our pipeline can effectively search for
-              the kernel composition compared to previous pipelines.
-            </p> -->
-          </div>
-          <div class="column is-full-width has-text-centered">
             <img src="./static/images/task_frequency.png" class="interpolation-image"
               alt="Interpolate start reference image." />
+            <img src="./static/images/task_frequency.png" class="interpolation-image"
+              alt="Interpolate start reference image." />
+          </div> -->
+          <div class="column is-full-width"
+            style="display: flex; gap: 1.5rem; align-items: stretch; justify-content: center;">
+            <!-- Image with caption -->
+            <figure style="flex: 1; margin: 0; text-align: center; display: flex; flex-direction: column;">
+              <img src="./static/images/task_frequency.png" class="interpolation-image"
+                alt="Task frequency distribution." style="width: 100%; flex: 1; object-fit: contain;" />
+              <figcaption style="margin-top: 0.5em; font-size: 0.85rem; color: #555;">
+                <strong>Figure 1.</strong> Task frequency distribution of the SMILE-Next dataset across three laughter
+                understanding tasks.
+              </figcaption>
+            </figure>
+            <!-- Table with caption -->
+            <figure style="flex: 1; margin: 0; text-align: center; display: flex; flex-direction: column;">
+              <div
+                style="flex: 1; font-size: 0.82rem; text-align: left; border: 1.5px solid #333; font-family: 'Georgia', serif; line-height: 1.55;">
+                <div style="background: #f5f5f5; padding: 0.5em 0.75em; border-bottom: 1.5px solid #333;">
+                  <strong>Examples of Generated Self-Instruction Instances</strong>
+                </div>
+                <div style="padding: 0.5em 0.75em; border-bottom: 1px solid #bbb;">
+                  <strong>Evaluating task:</strong> Rate each laugh in the scene based on intensity and context, and
+                  determine whether it was genuine or forced.<br>
+                  <strong>Input:</strong> During a tense board meeting at her office, Sarah tries to lighten the mood
+                  with
+                  a faint chuckle after the boss makes a dry joke. Her co-workers don't seem to respond much.<br>
+                  <strong>Answer:</strong> Forced, low intensity
+                </div>
+                <div style="padding: 0.5em 0.75em; border-bottom: 1px solid #bbb;">
+                  <strong>Correlation task:</strong> Derive the relationship between the acoustic features and the
+                  intensity or type of laugh.<br>
+                  <strong>Input:</strong> Acoustic feature: irregular pace, variation in pitch (Laughter)<br>
+                  <strong>Answer:</strong> This could suggest a nervous laughter or possibly a fake laugh.
+                </div>
+              </div>
+              <figcaption style="margin-top: 0.5em; font-size: 0.85rem; color: #555;">
+                <strong>Table 1.</strong> Examples of laughter-specific self-instruction instances generated for the
+                SMILE-Next dataset.
+              </figcaption>
+            </figure>
           </div>
           <br />
 
-          <h2 class="title is-3">Main Methods</h2>
+          <h2 class="title is-3">Mixture-of-Laugh-Experts</h2>
 
           <!-- Interpolating. -->
-          <h3 class="title is-4">Mixture-of-Laugh-Experts</h3>
+          <!-- <h3 class="title is-4">Mixture-of-Laugh-Experts</h3> -->
           <div class="content has-text-justified">
             <!-- <p>
               At <span class="dnerf">Gaussian Process Kernel Discovery</span>, our pipeline can effectively search for
               the kernel composition compared to previous pipelines.
             </p> -->
           </div>
-          <div class="column is-full-width has-text-centered">
-            <img src="./static/images/mole.png" class="interpolation-image" alt="Interpolate start reference image." />
+          <div class="column is-full-width"
+            style="display: flex; gap: 1.5rem; align-items: stretch; justify-content: center;">
+            <figure style="flex: 1; margin: 0; text-align: center; display: flex; flex-direction: column;">
+              <img src="./static/images/mole_only.png" class="interpolation-image"
+                alt="Mixture-of-Laugh-Experts architecture." style="width: 100%; flex: 1; object-fit: contain;" />
+              <figcaption style="margin-top: 0.5em; font-size: 0.85rem; color: #555;">
+                <strong>Figure 2.</strong> Architecture of the Mixture-of-Laugh-Experts (MoLE) framework for
+                laughter-adaptive specialization.
+              </figcaption>
+            </figure>
+            <figure style="flex: 1; margin: 0; text-align: center; display: flex; flex-direction: column;">
+              <img src="./static/images/router_weight.png" class="interpolation-image" alt="Router activation weights."
+                style="width: 100%; flex: 1; object-fit: contain;" />
+              <figcaption style="margin-top: 0.5em; font-size: 0.85rem; color: #555;">
+                <strong>Figure 3.</strong> Router activation weights across laughter understanding tasks, showing
+                task-adaptive expert selection.
+              </figcaption>
+            </figure>
           </div>
           <br />
 
           <h2 class="title is-3">Results</h2>
+
+          <h3 class="title is-4">Quantitative Results</h3>
+          <div class="content has-text-justified">
+          </div>
+          <div class="column is-full-width has-text-centered">
+            <img src="./static/images/quantitative_result.png" class="interpolation-image"
+              alt="Quantitative results." />
+          </div>
+          <br />
 
           <!-- Interpolating. -->
           <h3 class="title is-4">Qualitative Results</h3>
@@ -273,55 +334,12 @@
               alt="Interpolate start reference image." />
           </div>
           <br />
-
-          <!-- Re-rendering. -->
-          <h3 class="title is-4">Router Activation</h3>
-          <div class="content has-text-justified">
-            <p>
-              Using <span class="dnerf">Symbolic Regression</span>, our pipeline also can work as effective symbolic
-              regressor, searching for the appropriate function composition.
-            </p>
-          </div>
-          <div class="column is-full-width has-text-centered">
-            <img src="./static/images/results/router_weight2.png" class="interpolation-image"
-              alt="Interpolate start reference image." />
-            <!-- <img src="./static/images/results/icml-qual-mauna.png"
-                class="interpolation-image"
-                alt="Interpolate start reference image."/> -->
-          </div>
           <!--/ Re-rendering. -->
 
         </div>
       </div>
       <!--/ Animation. -->
 
-
-      <!-- Concurrent Work. -->
-      <!-- <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div> -->
-      / Concurrent Work.
 
     </div>
   </section>
